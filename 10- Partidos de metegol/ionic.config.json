@@ -1,0 +1,7 @@
+{
+  "name": "Partidos de metegol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

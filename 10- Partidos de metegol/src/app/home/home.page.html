@@ -1,0 +1,50 @@
+<ion-content class="background" [fullscreen]="true">
+  <form>
+    <div id="inputs">
+
+      <ion-label class="label">Ingrese su correo electrónico</ion-label>
+      <ion-input class="input" #email clearInput placeholder="Correo electrónico"></ion-input>
+
+      <div id="seprador">
+        <ion-label class="label">Ingrese su contraseña</ion-label>
+        <ion-input class="input" #password type="password" clearInput placeholder="Contraseña"></ion-input>
+      </div>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="onLogin(email,password)" expand="block">Iniciar Sesion</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <div id="opciones">
+      <ion-row>
+        <ion-col>
+          <h1 id="identificador" (click)="tipoUsuario('admin',email,password)">Admin</h1>
+          <h1 id="identificador" (click)="tipoUsuario('invitado',email,password)">Invitado</h1>
+
+          <h1 id="identificador" (click)="tipoUsuario('usuario',email,password)">Usuario</h1>
+          <h1 id="identificador" (click)="tipoUsuario('anonimo',email,password)">Anonimo</h1>
+
+          <h1 id="identificador" (click)="tipoUsuario('tester',email,password)">Tester</h1>
+
+        </ion-col>
+        <ion-col>
+          <button id="redondo" (click)="tipoUsuario('admin',email,password)"> </button>
+          <button id="redondo" (click)="tipoUsuario('invitado',email,password)"> </button>
+          <button id="redondo" (click)="tipoUsuario('usuario',email,password)"> </button>
+          <button id="redondo" (click)="tipoUsuario('anonimo',email,password)"> </button>
+          <button id="redondo" (click)="tipoUsuario('tester',email,password)"> </button>
+        </ion-col>
+
+      </ion-row>
+
+
+
+
+    </div>
+
+  </form>
+
+</ion-content>

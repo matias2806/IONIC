@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter.partidosMetegol",
+  "appName": "Partidos de metegol",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 4000, 
+      "lauchAutoHide": false
+    }
+  },
+  "cordova": {}
+}

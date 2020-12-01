@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "misapp-pps": {
+      "hosting": {
+        "app": [
+          "misapp-pps"
+        ]
+      }
+    }
+  }
+}
