@@ -1,0 +1,79 @@
+#superpuesto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color:#db2828;
+}
+
+#divSplash{
+   
+    background-image: url("../assets/splashSinNombre.png")  ;
+    background-position: 50%;
+    background-repeat: no-repeat; //No repite
+    background-size: cover; //redimensiona centrado
+    height: 100%;
+    width: 100%;
+    right: 50%;
+    z-index: 10;
+}
+
+#nombre{
+   
+    background-image: url("../assets/Solo_Nombre.png")  ;
+    background-position: 50%;
+    background-repeat: no-repeat; //No repite
+    background-size: cover; //redimensiona centrado
+    height: 100%;
+    width: 100%;
+    right: 10vw;
+    z-index: 10;
+    margin-left: 100%;
+    animation-name: desplazamientoIzqDer;
+    animation-duration: 12s;
+    // animation-iteration-count: ;
+}
+
+
+
+@keyframes desplazamientoIzqDer{
+    from{ 
+       
+    }
+    10%{      
+        
+    }
+    20%{
+       
+    }
+    30%{
+        
+    }
+    40%{
+       
+    }
+    50%{
+       
+    }
+    60%{
+       
+    }
+    70%{
+        
+    }
+    80%{
+        margin-left: 0%;
+    }
+    90%{
+        margin-left: 0%;
+    }
+    95%{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}

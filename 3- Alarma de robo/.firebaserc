@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "login-mati": {
+      "hosting": {
+        "app": [
+          "login-mati"
+        ]
+      }
+    },
+    "misapp-pps": {
+      "hosting": {
+        "app": [
+          "misapp-pps"
+        ]
+      }
+    }
+  }
+}

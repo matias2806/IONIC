@@ -1,0 +1,64 @@
+<ion-header color="success">
+  <ion-toolbar>
+    <ion-title>
+      Iniciar sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <form>
+    <div id="inputs">
+      <ion-item>
+        <ion-label>Ingrese su correo</ion-label>
+        <ion-input type="text" #email required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Ingrese su contraseña</ion-label>
+        <ion-input type="password" #password required></ion-input>
+      </ion-item>
+    </div>
+    
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="onLogin(email,password)" expand="block" type="submit" color="tertiary">Iniciar Sesion
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-list>
+      <ion-radio-group value="usuarios">
+        <ion-list-header>
+          <ion-label>Ingreso rapido con usuarios pre cargados</ion-label>
+        </ion-list-header>
+
+        <ion-item (click)="tipoUsuario('admin',email,password)">
+          <ion-label>Admin</ion-label>
+          <ion-radio value="admin" color="success"></ion-radio>
+        </ion-item>
+
+        <ion-item (click)="tipoUsuario('invitado',email,password)">
+          <ion-label>Invitado</ion-label>
+          <ion-radio value="invitado" color="success"></ion-radio>
+        </ion-item>
+
+        <ion-item (click)="tipoUsuario('usuario',email,password)">
+          <ion-label>Usuario</ion-label>
+          <ion-radio value="usuario" color="success"></ion-radio>
+        </ion-item>
+
+        <ion-item (click)="tipoUsuario('anonimo',email,password)">
+          <ion-label>Anonimo</ion-label>
+          <ion-radio value="anonimo" color="success"></ion-radio>
+        </ion-item>
+
+        <ion-item (click)="tipoUsuario('tester',email,password)">
+          <ion-label>Tester</ion-label>
+          <ion-radio value="tester" color="success"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </form>
+</ion-content>

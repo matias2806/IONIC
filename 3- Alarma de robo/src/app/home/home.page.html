@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Iniciar Sesion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="background" [fullscreen]="true">
+  <br>
+  <ion-col>
+
+
+  </ion-col>
+
+  
+  <img class="centrado" src="../../assets/persona.png" alt="" > 
+
+
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+    <br>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="onLogin(email,password)" expand="block">Iniciar Sesion</ion-button>
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" type="submit" (click)="tipoUsuario('admin',email,password)" expand="block">Admin</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" type="submit" (click)="tipoUsuario('invitado',email,password)"  expand="block">Invitado</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" type="submit" (click)="tipoUsuario('usuario',email,password)"  expand="block">Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" type="submit" (click)="tipoUsuario('anonimo',email,password)"  expand="block">Anonimo</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" type="submit" (click)="tipoUsuario('tester',email,password)"  expand="block" >Tester</ion-button>
+      </ion-col>
+    </ion-row>
+    
+
+   
+
+<br>
+
+  </form>
+</ion-content>

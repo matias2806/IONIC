@@ -1,0 +1,74 @@
+#superpuesto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color:#9b8245;
+}
+
+#divSplash{
+   
+    background-image: url("../assets/splash.png")  ;
+    background-position: 50%;
+    background-repeat: no-repeat; //No repite
+    background-size: cover; //redimensiona centrado
+    height: 100%;
+    width: 100%;
+    right: 50%;
+    z-index: 10;
+}
+
+#container{
+    height: 200px;
+    width: auto;
+}
+#laser{
+    width: 80%;
+    display:block;
+    margin:auto;
+    animation-name: movimiento;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+@keyframes movimiento{
+    from{ 
+       
+    }
+    10%{      
+          
+    }
+    20%{
+        
+    }
+    30%{
+        
+    }
+    40%{
+        
+    }
+    50%{
+        
+    }
+    60%{
+        transform:translateY(230px); 
+    }
+    70%{
+       
+    }
+    80%{
+        
+    }
+    90%{
+    }
+    
+    to{
+        
+    }
+}

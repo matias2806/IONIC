@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-title *ngIf="esLinda">linda</ion-title>
+        <ion-title *ngIf="!esLinda">Fea</ion-title>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col>
+        <ion-button  (click)= "sacaFoto()">tomar foto</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <ion-segment>
+
+    <ion-segment-button >
+      <ion-label>Todas las fotos</ion-label>
+    </ion-segment-button>
+
+
+  </ion-segment>
+
+  <div *ngFor="let item of lista">
+    <!-- <div *ngIf="item.color == colorSeleccionado"> -->
+      <!-- editar la img PENDIENTE -->
+      
+     <img [src]=item.image  alt=""> 
+     <h3>{{item.uemail}}</h3>
+     <h5>{{item.fecha | date : 'medium' }}</h5>
+     <ion-button  (click)= "darVoto(item)">Vota</ion-button>
+     <h6 *ngIf="item.votos">{{item.votos.length}}</h6>
+      <hr><br>
+    <!-- </div> -->
+  </div>
+
+</ion-content>

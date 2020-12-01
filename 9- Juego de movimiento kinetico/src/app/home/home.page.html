@@ -1,0 +1,54 @@
+<ion-content class="background" [fullscreen]="true">
+  <form>
+
+
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="top" horizontal="start" slot="fixed">
+      <ion-fab-button id="elprimero">
+        <ion-icon name="arrow-forward-circle"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-list side="bottom">
+        <ion-fab-button (click)="tipoUsuario('admin',email,password)">
+          ADMIN
+        </ion-fab-button>
+
+        <ion-fab-button (click)="tipoUsuario('invitado',email,password)">
+          INVITADO
+        </ion-fab-button>
+
+        <ion-fab-button (click)="tipoUsuario('usuario',email,password)">
+          USUARIO
+        </ion-fab-button>
+
+        <ion-fab-button (click)="tipoUsuario('anonimo',email,password)">
+          ANONIMO
+        </ion-fab-button>
+
+        <ion-fab-button (click)="tipoUsuario('tester',email,password)">
+          TESTER
+        </ion-fab-button>
+      </ion-fab-list>
+
+    </ion-fab>
+
+
+    <div id="inputs">
+
+      <ion-label class="label">Ingrese su correo </ion-label>
+      <ion-input class="input" #email clearInput placeholder="Correo electrónico"></ion-input>
+
+      <div id="seprador">
+        <ion-label class="label">Ingrese su contraseña</ion-label>
+        <ion-input class="input" #password type="password" clearInput placeholder="Contraseña"></ion-input>
+      </div>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button id="enviar" type="submit" (click)="onLogin(email,password)" expand="block">Iniciar Sesion
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,57 @@
+ion-content.background {
+    --background: url("../../assets/images/fondo.png") 0 0/100% 100% no-repeat;
+  }
+  
+  #btnLindo,
+  #btnFeo {
+    height: 45vh;
+    width: 95vw;
+  
+    margin: auto;
+    display: block;
+    margin-top: 3vh;
+    
+  }
+  
+  #btnFeo{
+      font-family: 'cosasFeas';
+      font-size: 34px;
+  }
+  #btnLindo{
+      font-family: 'cosasLindas';
+      font-size: 27px;
+  }
+  
+  #imgLinda, #imgFea{
+      margin-left: 7px;
+      height: 100px;
+      width: 100px;
+  }
+  
+  
+  
+  #mitadArriba {
+  //   background-color: red;
+  }
+  
+  #mitadAbajo {
+  //   background-color: blue;
+  }
+  #botones {
+    // margin:10px auto;
+    // display:block;
+    // height: 300px;
+  
+    // margin-top: 40px;
+    // margin-bottom: 40px;
+  }
+  
+  @font-face{
+      font-family: 'cosasLindas';
+      src:url('../../assets/fonts/Cosas_lindas/Butterfly.ttf');
+  }
+  
+  @font-face{
+      font-family: 'cosasFeas';
+      src:url('../../assets/fonts/Cosas_feas/FORCED\ SQUARE.ttf');
+  }

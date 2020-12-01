@@ -1,0 +1,90 @@
+<ion-content class="background" [fullscreen]="true">
+
+  <div id="botonera">
+
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="top" horizontal="start" slot="fixed">
+      <ion-fab-button id="elprimero">
+        <!-- <ion-icon name="arrow-forward-circle"></ion-icon> -->
+        <img #fondo src="../../assets/images/espana.svg" alt="">
+      </ion-fab-button>
+
+      <ion-fab-list side="end">
+        <ion-fab-button (click)="lenguaje('espanol',fondo)">
+          <img src="../../assets/images/espana.svg" alt="">
+        </ion-fab-button>
+
+        <ion-fab-button (click)="lenguaje('portugues',fondo)">
+          <img src="../../assets/images/portugal.svg" alt="">
+        </ion-fab-button>
+
+        <ion-fab-button (click)="lenguaje('ingles',fondo)">
+          <img src="../../assets/images/reino-unido.svg" alt="">
+        </ion-fab-button>
+
+      </ion-fab-list>
+
+    </ion-fab>
+
+    <!-- <img src="../../assets/colores/amarillo.svg"  #imagenCentrada id='imagenCentrada' (onChange)='cambio()' alt=""> -->
+
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button id="elprimero">
+       
+        <img #fondoCat src="../../assets/images/animal.svg" alt="">
+      </ion-fab-button>
+
+      <ion-fab-list side="start">
+        <ion-fab-button (click)="tema('colores',foto1,foto2,foto3,foto4,foto5,foto6, fondoCat)">
+          <img src="../../assets/images/color.svg" alt="">
+        </ion-fab-button>
+
+        <ion-fab-button size="medium" (click)="tema('animales',foto1,foto2,foto3,foto4,foto5,foto6, fondoCat)">
+          <img src="../../assets/images/animal.svg" alt="">
+        </ion-fab-button>
+
+        <ion-fab-button (click)="tema('numeros',foto1,foto2,foto3,foto4,foto5,foto6, fondoCat)">
+          <img src="../../assets/images/numero.svg" alt="">
+        </ion-fab-button>
+
+      </ion-fab-list>
+
+    </ion-fab>
+
+
+
+  </div>
+
+  <div id="opciones">
+    
+
+    <ion-col>
+      <ion-row>
+        <button id="boton" (click)="audio('btnUno')" ><img #foto1 id="imagen" src="../../assets/animales/ballena.svg" alt=""></button>
+      </ion-row>
+      <ion-row>
+        <button id="boton"  (click)="audio('btnDos')"><img #foto2 id="imagen" src="../../assets/animales/cocodrilo.svg" alt=""></button>
+      </ion-row>
+      <ion-row>
+        <button id="boton"  (click)="audio('btnTres')"><img #foto3 id="imagen" src="../../assets/animales/jirafa.svg" alt=""></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button id="boton"  (click)="audio('btnCuatro')"><img  #foto4 id="imagen" src="../../assets/animales/mono.svg" alt=""></button>
+      </ion-row>
+      <ion-row>
+        <button id="boton"  (click)="audio('btnCinco')"><img #foto5  id="imagen" src="../../assets/animales/pulpo.svg" alt=""></button>
+      </ion-row>
+      <ion-row>
+        <button id="boton"  (click)="audio('btnSeis')"><img #foto6 id="imagen" src="../../assets/animales/vaca.svg" alt=""></button>
+      </ion-row>
+    </ion-col>
+
+
+
+
+  </div>
+
+
+</ion-content>

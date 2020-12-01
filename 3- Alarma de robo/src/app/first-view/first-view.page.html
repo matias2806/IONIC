@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Controlador de la Alarma</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background"  [fullscreen]="true">
+
+  <ion-input  #x >valueX</ion-input>
+  <ion-input  #y >valueY</ion-input>
+  <ion-input  #z >valueZ</ion-input>
+
+  <img class="centrado" src="../../assets/campana-del-colegio.svg" alt="campana">
+
+
+  <ion-row>
+    <ion-col id="colum" >
+      <div class="d-flex justify-content-center">
+        <label class="switchBtn" >
+          <input type="checkbox" id='a' [(ngModel)]="alarma" (click)="cambioEstado(x,y,z)" >
+          <div class="slide round">On / Off</div> 
+          <!-- (click)="toggle(this)" -->
+        </label>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  
+
+  
+ 
+
+
+  <!-- <ion-list>
+    <ion-radio-group value="estado" >
+      <ion-list-header>
+        <ion-label>Estado de la alarma</ion-label>
+      </ion-list-header>
+  
+      <ion-item (click)="onClick('activada')">
+        <ion-label>Activada</ion-label>
+        <ion-radio value="activada" color="success"></ion-radio>
+      </ion-item>
+  
+      <ion-item (click)="onClick('desactivada')">
+        <ion-label>Desactivada</ion-label>
+        <ion-radio  value="desactiva" color="danger"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list> -->
+
+
+  <!-- <h2>valor => {{value}}</h2> -->
+</ion-content>

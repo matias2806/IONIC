@@ -1,0 +1,7 @@
+{
+  "name": "Juego de movimiento kinetico",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

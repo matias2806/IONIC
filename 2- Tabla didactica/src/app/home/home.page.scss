@@ -1,0 +1,88 @@
+ion-content.background{
+    --background: url('../../assets/images/fondo.jpg') 0 0/100% 100% no-repeat;
+}
+
+ion-input{
+    color:  white ;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-style: unset;
+    z-index: 9999;
+}
+
+// ion-button{
+//     style:none;
+// }
+
+#redondo{
+    width:80px;
+    height:80px;
+    background-color:#ffc409;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:13px;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+
+#redondoEnviar{
+    width:140px;
+    height:140px;
+    background-color:#ffc409;
+    padding:10px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+    font-size:20px;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.input{
+    color: whitesmoke;
+}
+
+.label{
+    color: white;
+}
+
+#inputs{
+    margin-top: 10vh;
+    margin-left: 10px;
+}
+
+#opciones{
+    margin-top: 3vh;
+}
+
+#normal{
+   background-color: transparent;
+   margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+#labelnormal{
+    display:inline-block;
+    vertical-align:middle;
+    margin: 0 auto;
+}
+#seprador{
+    margin-top: 5px;
+}

@@ -1,0 +1,39 @@
+ion-content.background{
+    --background: url('../../assets/images/fondo.jpg') 0 0/100% 100% no-repeat;
+}
+
+#botonera{
+    // background-color: black;
+    padding: 7vh;
+}
+
+#opciones{
+    // background-color: yellow;
+    // height: 200px;
+    display: flex;
+}
+
+#boton{
+    border: 2px solid black;
+    margin: 5px;
+    height: 25vh;
+    width: 45vw;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+#imagen{
+    height: 20vh;
+    width: 40vw;
+}
+
+#imagenCentrada{
+    height: 40px;
+    width:40px;
+    margin-left: 90px;
+}
